@@ -2,6 +2,7 @@ package SirTp3.SirTp3;
 
 import java.net.UnknownHostException;
 
+import metier.Article;
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 
@@ -26,6 +27,8 @@ public class App {
 	    MongoClient mongo = new MongoClient();
 	    morphia.map(Person.class).map(Address.class);
 	    Datastore ds = morphia.createDatastore(mongo, "test");
+
+		Article article = new Article("Sciances", 4);
 	    
 	    Person p = new Person();
 	    p.setName("Tintin");
@@ -36,10 +39,17 @@ public class App {
 	    address.setCountry("Some country");
 	    //set address
 	    p.addAddress(address);
+
+	    article.addBuyer(p);
 	    // Save the POJO
 	    ds.save(p);
+	    ds.save(article);
 	    for (Person e : ds.find(Person.class))
 	         System.err.println(e);
+
+			for (Article e : ds.find(Article.class))
+				System.err.println(e);
+
 	}
 
 }

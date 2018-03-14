@@ -1,10 +1,13 @@
 package metier;
 
 import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
 
 @Entity
 public class Address {
 
+	@Id
+	private double id;
 	private String street;
 	private String country;
 	private String city;

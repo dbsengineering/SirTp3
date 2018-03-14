@@ -16,9 +16,17 @@ public class Article {
 	private List<Person> buyers = new ArrayList<Person>();
 
 	/**
-	 * Constructeur.
+	 * Constructeur 1 .
 	 */
 	public Article() {
+	}
+
+	/**
+	 * Constructeur 2 .
+	 */
+	public Article(String name, int stars) {
+		this.name = name;
+		this.stars = stars;
 	}
 	
 	public void addBuyer(Person person) {
