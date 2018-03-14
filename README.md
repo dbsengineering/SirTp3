@@ -1,4 +1,4 @@
-# SirTp3
+### SirTp3 : Morphia et Redis
 
 version 0.0.1 [development]
 
@@ -9,7 +9,14 @@ Api with Maven Morphia and MongoDb
 
 ### Prerequisites
 
-to have data base mongodb installed.
+* part 1 : to have data base mongodb installed.
+* part 2 : Redis.
+
+### Launch
+
+* part 1 : launch MongoDB
+* part 2 : launch Redis
+
 
 
 ### Limite d'une base de données orientée documents
