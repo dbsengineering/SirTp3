@@ -1,4 +1,4 @@
-### SirTp3 : Morphia et Redis
+### SirTp3 : NoSQL : Morphia et Redis
 
 version 0.0.1 [development]
 
@@ -24,11 +24,18 @@ Api with Maven Morphia and MongoDb
 Non ACID. Ne répond pas à toutes les problématiques de stockage. L'architecture logiciel doit être complexe. Plus d'efforts pour le développeur.
 
 
+### Types de données stockés dans Redis
+
+Ce sont des types numériques et binaires en clés/valeurs
+
+
+### Types de requêtes avec Redis
+
+requête sur des valeurs par des clés . sur des calculs, etc..
 
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [Hibernate]
 
 
 ## Authors
